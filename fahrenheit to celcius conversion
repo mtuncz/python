@@ -1,0 +1,22 @@
+"""This program converts Fahrenheit to Celcius"""
+
+print(__doc__)
+
+while True:
+    f_temps = input("Enter temp in F: ")
+    if f_temps == "done":
+        break
+    try:
+        f_temp = float(f_temps)
+    except:
+        print("Invalid input")
+        continue
+    offset = 32
+    multiplier = 5.0 / 9.0
+    c_temp = (f_temp - offset) * multiplier
+    print(f_temp, " F is ", format(c_temp,",.2f")," C", sep="")
+    print()
+    
+    
+    
+ 
