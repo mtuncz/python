@@ -1,0 +1,15 @@
+str1 = "banana"
+
+for letter in str1:
+    print(letter)
+
+
+input("Press enter...")
+
+
+index = 0
+
+while index < len(str1):
+    letter = str1[index]
+    print(letter)
+    index += 1
