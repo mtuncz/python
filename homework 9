@@ -1,0 +1,28 @@
+def make_list():
+    """creates, asks input from the user, adds input number to list
+     if the number is not -999, if -999 entered, returns the list"""
+    nums = []
+    while True:
+        num = int(input("Enter a number: "))
+        if num == -999:
+            break
+        else:
+            nums.append(num)
+    return nums
+
+
+new_list = make_list()
+
+def sum_list(x: list):
+    """takes a list as an argument, sums up the numbers in the list
+    and returns the sum, if list is empty, returns 0"""
+    if len(x) == 0:
+        return 0
+    else:
+        sum = 0
+        for i in x:
+            sum+= i
+        return sum
+
+
+print(sum_list(new_list))
