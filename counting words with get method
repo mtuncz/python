@@ -11,3 +11,17 @@ for name in names:
 
 
 print(counts)
+
+
+
+
+counts = dict()
+
+names = ["mike", "joe", "yes", "no", "yes", "mike"]
+
+for name in names:
+    counts[name] = counts.get(name, 0) + 1
+
+
+print(counts)
+
