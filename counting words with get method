@@ -1,0 +1,13 @@
+counts = dict()
+
+names = ["mike", "joe", "yes", "no", "yes", "mike"]
+
+for name in names:
+    x = counts.get(name, 0)
+    if x == 0:
+        counts[name] = 1
+    else:
+        counts[name] += 1
+
+
+print(counts)
