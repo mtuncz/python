@@ -1,0 +1,16 @@
+
+lst = list()
+
+while True:
+    data = input("enter a name, enter q to quit:")
+    if data == "q":
+        break
+    lst.append(data.lower().strip())
+
+
+ccc = dict()
+
+for name in lst:
+    ccc[name] = ccc.get(name,0) + 1
+
+print(ccc)
