@@ -1,0 +1,13 @@
+
+
+import urllib.request, urllib.parse, urllib.error
+
+hand = urllib.request.urlopen("https://www.haberturk.com/")
+
+counts = dict()
+for line in hand:
+    words = line.decode().split()
+    for word in words:
+        counts[word] = counts.get(word, 0) + 1
+
+print(counts)
