@@ -1,0 +1,23 @@
+import itertools as it
+
+ct = 0
+
+for c in it.product(range(10), repeat = 4):
+    print(c)
+    sum = 0
+    for n in c:
+        sum += int(n)
+    if sum == 9:
+        ct += 1
+
+ct1 = 0
+for c in it.product(range(10), repeat = 4):
+    sum = 0
+    for n in c:
+        sum += int(n)
+    if sum == 10:
+        ct1 += 1
+
+
+print("Total integer count with digits sum 9 is :", ct)
+print("Total integer count with digits sum 10 is :", ct1)
